@@ -51,10 +51,10 @@ export default function Checkout() {
   };
 
   useEffect(() => {
-    if (!isAuthenticated) {
-      router.push('/login?redirect=checkout')
-      return
-    }
+    // if (!isAuthenticated) {
+    //   router.push('/login?redirect=checkout')
+    //   return
+    // }
     if (cart.length === 0 && !orderPlaced) {
       router.push('/cart')
       return
